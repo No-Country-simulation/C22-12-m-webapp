@@ -12,4 +12,9 @@ Creación y Edición de de Playlists: Los usuarios pueden crear y guardar sus pr
 Integración con Servicios de Música: Posibilidad de conectar con plataformas de streaming populares para reproducir música directamente desde la aplicación.
 Compartir en Redes Sociales: Funcionalidad para compartir playlists en redes sociales.
 
-TECNOLOGÍAS UTILIZADAS:-----------------
+### Tecnologías Utilizadas  
+
+- 🟢 **Java**  
+- 🔵 **HTML**  
+- 🟡 **CSS**  
+- 🔴 **JavaScript**  
