@@ -1,5 +1,5 @@
 # C22-12-m-webapp
-# WEB APP – PLAYLIST SEGÚN ESTADO DE ÁNIMO DEL USUARIO NOMBRE------------#
+# WEB APP – MOODMELODY #
 
 El proyecto se centra en la creación de una web app que sugiera el armado de playlists de música adaptadas según el estado de ánimo del usuario.-
 Por medio de una interfaz amigable e intuitiva el usuario podrá seleccionar su estado emocional del día recibiendo recomendaciones musicales personalizadas.
