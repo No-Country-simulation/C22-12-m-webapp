@@ -7,7 +7,7 @@ Por medio de una interfaz amigable e intuitiva el usuario podrá seleccionar su 
 ## CARACTERÍSTICAS DE LA WEB APP: ##
 
 
-+ __Elección de Estado de Ánimo:__ Los usuarios pueden elegir entre diferentes estados de ánimo (-----------) para obtener playlists que se ajusten a sus emociones actuales.
++ __Elección de Estado de Ánimo:__ Los usuarios pueden elegir entre diferentes estados de ánimo (Alegre, Reflexivo, Relajado, Eufórico, Romántico), para obtener playlists que se ajusten a sus emociones actuales.
 
 + __Recomendaciones Personalizadas al usuario:__ Utiliza algoritmos de recomendación para ofrecer canciones y artistas basados en el estado de ánimo seleccionado.
 
