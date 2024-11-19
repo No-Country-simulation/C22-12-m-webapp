@@ -13,7 +13,20 @@
 5.	El sistema debe proporcionar la posibilidad de guardar credenciales para autocompletar.
 
 ### USER STORY 3: ###
-1.	El usuario puede ver una lista de estados de ánimo disponibles.
+1.	El usuario puede ver una lista de estados de ánimo disponibles (Alegre, Reflexivo, Relajado, Eufórico, Romántico).
 2.	El usuario puede seleccionar un estado de ánimo.
 3.	La selección debe actualizar las recomendaciones de playlists en tiempo real.
 4.	La playlist debe coincidir con el estado de ánimo seleccionado.
+
+### USER STORY 4: ###
+1.	El usuario debe contar con una opción bien visible en la parte superior de la playlist para poder guardarla y reproducirla cuando desee.
+2.	Cada playlist tiene que tener un nombre que la individualice y una descripción.
+3.	Debe proporcionarse opción de eliminar la playlist guardada.
+
+### USER STORY 5: ###
+1.	El usuario debe contar con la posibilidad de eliminar cualquier canción de la playlist propuesta.
+2.	El usuario puede crear sus propias playlist añadiendo canciones.
+   
+### USER STORY 6: ###
+1.	Debe proporcionarse enlace mediante ícono de red social para que la playlist pueda compartirse.
+
