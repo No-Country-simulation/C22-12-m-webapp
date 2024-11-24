@@ -5,22 +5,23 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+
+import java.util.List;
 @Entity
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 @Getter
 @Setter
 @Table
-public class Cancion {
+public class ListReproduction {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    private String imagen;
-    private String nombre;
-    private String artista;
-    private Integer duracion;
-    private boolean explicita;
+    private String name;
+    @OneToMany
+    private List<Song> songs;
     @ManyToOne
-    @JoinColumn(name = "lista_reproduccion_id", nullable = false)
-    private ListaReproduccion listaReproduccion;
+    @JoinColumn(name = "user_id", nullable = false)
+    private User user;
+
 }
