@@ -1,6 +1,6 @@
 // src/components/Header.js  
 import React, { useState } from 'react';   
-import { Link } from 'react-router-dom';     
+import { Link } from 'react-router-dom'; 
 import '../index.css';  
 
 const Header = () => {  
@@ -12,7 +12,7 @@ const Header = () => {
 
     return (  
         <header>  
-            <img className="App-logo" src={`${process.env.PUBLIC_URL}/images/logo.png`} alt="Logo Mood Melody" />    
+            <img className="App-logo" src={`../images/logo.png`} alt="Logo Mood Melody" />    
             <nav>  
                 <ul>  
                     <li>  

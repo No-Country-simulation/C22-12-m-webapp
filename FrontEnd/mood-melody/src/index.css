@@ -18,6 +18,11 @@ body {
   margin: 0; 
 }  
 
+h2, h3{
+  text-align: center;
+  color: var(--navy-blue);
+}
+
 /* Estilos para el Header */  
 header {  
   background: var(--teal);  
@@ -134,4 +139,6 @@ footer {
   justify-content: center;  
   align-items: center; 
 }
+
+
 
