@@ -1,0 +1,137 @@
+:root {  
+  --aquamarine: #63d7c7;  
+  --light-teal: #93edda;  
+  --navy-blue: #052752;   
+  --red-pink: #f12951;   
+  --teal: #35818e;  
+}
+
+* {  
+  box-sizing: border-box;  
+} 
+
+body {  
+  font-family: Arial, sans-serif;   
+  padding: 0;  
+  background-color:var(--aquamarine) ; 
+  height: 100vh;  
+  margin: 0; 
+}  
+
+/* Estilos para el Header */  
+header {  
+  background: var(--teal);  
+  color: var(--navy-blue);  
+  display: flex;  
+  flex-direction: column;  
+  align-items: center;  
+  padding: 25px;   
+  width: 100vw; 
+  position: relative;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+  z-index: 1000;
+}  
+
+nav ul {  
+  list-style: none;  
+  padding: 0;  
+  display: flex;  
+  gap: 135px;
+}  
+
+nav a {  
+  color: #052752;  
+  text-decoration: none;  
+  padding: 3px;  
+  transition: color 0.3s ease;   
+}  
+
+nav a.active {   
+  color: #052752; 
+  opacity: 0.7;   
+}  
+
+nav a:hover {  
+  opacity: 0.7;  
+} 
+
+.App-logo {  
+  width: 100px;  
+  height: 100px; 
+  border-radius: 50%;
+  border: 3px solid #03A9F4; width: 100px; height: 100px; 
+  margin-bottom: 20px;
+  padding:2px; 
+  align-items: center;
+}  
+
+section {  
+  display: flex;   
+  width: 900px; 
+  height: 230px;  
+  justify-content: space-around;  
+  align-items: center;  
+  margin: 20px auto;  
+  border: 2px solid #ccc; 
+  border-radius: 15px;   
+  background-color: rgba(255, 255, 255, 0.9); 
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+}  
+
+section img {  
+  width: 0; 
+  flex-grow: 1;   
+  object-fit: cover;
+  opacity: 0.8;   
+  transition: width 0.5s ease, opacity 0.5s ease;
+  border-radius: 5px; 
+}  
+
+section img:hover {  
+  cursor: pointer; 
+  width: 300px;   
+  opacity: 1;   
+  filter: contrast(120%);   
+}
+
+.mood-buttons {  
+  display: flex;  
+  justify-content: center;  
+  margin-top: 20px;  
+}  
+
+.mood-buttons button {  
+  margin: 10px;  
+  padding: 10px;  
+  background-color: #61dafb;  
+  border: none;  
+  border-radius: 5px;  
+  cursor: pointer;  
+  font-size: 16px;  
+}  
+
+.mood-buttons button:hover {  
+  background-color: #21a1f1;  
+  color: white;  
+}
+
+main {  
+  padding: 20px;  
+}  
+
+footer {  
+  text-align: center;  
+  padding: 10px 0;  
+  background: #35424a;  
+  color: #ffffff;  
+  position: relative;  
+  bottom: 0;  
+  width: 100%;  
+}
+
+.login .singup{
+  display: flex;  
+  justify-content: center;  
+  align-items: center; 
+}
+
