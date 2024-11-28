@@ -1,23 +1,56 @@
 // src/components/Recommendations.js  
 import React from 'react';  
-import '../index.css';
+import '../index.css';   
+import bailar from '../images/bailar.png';   
+import cantar from '../images/cantar.png';   
+import meditar from '../images/meditar.png';   
+import pensar from '../images/pensar.png';  
+import descansar from '../images/descansar.png';  
+import leer from '../images/leer.png';  
+import moderna from '../images/moderna.png';  
+import recuerdo from '../images/recuerdo.png';  
+import deporte from '../images/deporte.png';  
+import activar from '../images/activar.png';  
 
 // Componente de recomendaciones basado en el estado de ánimo  
 const Recommendations = ({ mood }) => {  
+    // Cada estado de ánimo tiene sus respectivas playlists y descripciones  
     const playlists = {  
-        Alegre: ['Playlist Alegre 1', 'Playlist Alegre 2'],  
-        Reflexivo: ['Playlist Reflexiva 1', 'Playlist Reflexiva 2'],  
-        Relajado: ['Playlist Relajada 1', 'Playlist Relajada 2'],  
-        Enérgico: ['Playlist Enérgica 1', 'Playlist Enérgica 2'],  
-        Romántico: ['Playlist Romántica 1', 'Playlist Romántica 2'],  
+        Alegre: [  
+            { name: 'Música para Bailar', img: bailar, link: '/playlists/musica-bailar' },  
+            { name: 'Música para Cantar', img: cantar, link: '/playlists/musica-cantar' },  
+        ],  
+        Reflexivo: [  
+            { name: 'Música para Meditar', img: meditar, link: '/playlists/musica-meditar' },  
+            { name: 'Música para Pensar', img: pensar, link: '/playlists/musica-pensar' },  
+        ],  
+        Relajado: [  
+            { name: 'Música para Descansar', img: descansar, link: '/playlists/musica-descansar' },  
+            { name: 'Música para Leer', img: leer, link: '/playlists/musica-leer' },  
+        ],  
+        Romántico: [  
+            { name: 'Música Moderna', img: moderna, link: '/playlists/musica-moderna' },  
+            { name: 'Música del Recuerdo', img: recuerdo, link: '/playlists/musica-recuerdo' },  
+        ],  
+        Enérgico: [  
+            { name: 'Música para Hacer Deporte', img: deporte, link: '/playlists/musica-deporte' },  
+            { name: 'Música para Activarte', img: activar, link: '/playlists/musica-activarte' },  
+        ],  
     };  
 
+    const backgroundClass = mood.toLowerCase();  
+    
     return (  
-        <div>  
+        <div className={backgroundClass}>  
             <h3>Recomendaciones para el estado de ánimo: {mood}</h3>  
-            <ul>  
+            <ul className="playlist-list">  
                 {playlists[mood]?.map((playlist, index) => (  
-                    <li key={index}>{playlist}</li>  
+                    <li key={index} className="playlist-item">  
+                        <a href={playlist.link}>   
+                            <img src={playlist.img} alt={playlist.name} className="playlist-image" />  
+                            <span className="playlist-name">{playlist.name}</span>  
+                        </a>  
+                    </li>  
                 ))}  
             </ul>  
         </div>  

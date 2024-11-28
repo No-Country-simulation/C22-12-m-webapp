@@ -5,7 +5,6 @@ import reflectiveImg from '../images/reflective.png';
 import relaxedImg from '../images/relaxed.png';  
 import energeticImg from '../images/energetic.png';  
 import romanticImg from '../images/romantic.png';
-import   Logo from '../images/logo.png'
 import '../index.css';
 
 function PlaylistGenerator({ setMood, userName }) {

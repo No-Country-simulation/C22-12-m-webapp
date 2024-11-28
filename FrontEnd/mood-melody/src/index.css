@@ -25,12 +25,11 @@ h2, h3{
 
 /* Estilos para el Header */  
 header {  
-  background: var(--teal);  
-  color: var(--navy-blue);  
+  background: var(--navy-blue);   
   display: flex;  
   flex-direction: column;  
   align-items: center;  
-  padding: 25px;   
+  padding: 15px;   
   width: 100vw; 
   position: relative;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
@@ -45,14 +44,14 @@ nav ul {
 }  
 
 nav a {  
-  color: #052752;  
+  color: var(--light-teal);  
   text-decoration: none;  
-  padding: 3px;  
+  padding: 0,5px;  
   transition: color 0.3s ease;   
 }  
 
 nav a.active {   
-  color: #052752; 
+  color: var(--teal); 
   opacity: 0.7;   
 }  
 
@@ -120,9 +119,10 @@ section img:hover {
   color: white;  
 }
 
-main {  
-  padding: 20px;  
-}  
+.Home {
+  background-color: var(--aquamarine);
+
+}
 
 footer {  
   text-align: center;  
@@ -138,6 +138,63 @@ footer {
   display: flex;  
   justify-content: center;  
   align-items: center; 
+}
+
+/* Recomendations */ 
+.alegre {  
+  background-color: #FFD700; /* Dorado */  
+  color: #000;  
+}  
+
+.reflexivo {  
+  background-color: #D3D3D3; /* Gris claro */  
+  color: #000; 
+}  
+
+.relajado {  
+  background-color: #B0E0E6; /* Azul pálido */  
+  color: #000; 
+}  
+
+.romantico {  
+  background-color: #FFB6C1; /* Rosa claro */  
+  color: #000;  
+}  
+
+Energetico {  
+  background-color: #FF6347; /* Tomate */  
+  color: #fff;  
+}
+  
+.playlist-list {  
+  list-style: none; /* Eliminar viñetas */  
+  padding: 0;  
+  display: flex; 
+  justify-content: center;  
+}  
+
+.playlist-item {  
+  margin: 10px;  
+  text-align: center;  
+}  
+
+/* Estilo de las imágenes */  
+.playlist-image {  
+  width: 300px;   
+  height: 200px;  
+  border-radius: 8px;  
+}  
+
+/* Estilo para el nombre de la playlist */  
+.playlist-name {  
+  display: block; /* Fuerza el span a iniciar en una nueva línea */  
+  margin-top: 8px;  
+  text-decoration: underline;  
+  color: #007bff; /* Color para parecer un enlace */  
+}  
+
+.playlist-name:hover {  
+  color: #0056b3; 
 }
 
 

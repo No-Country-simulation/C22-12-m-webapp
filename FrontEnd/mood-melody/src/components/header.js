@@ -1,6 +1,7 @@
 // src/components/Header.js  
 import React, { useState } from 'react';   
 import { Link } from 'react-router-dom'; 
+import logo from '../images/logo.png';
 import '../index.css';  
 
 const Header = () => {  
@@ -12,7 +13,7 @@ const Header = () => {
 
     return (  
         <header>  
-            <img className="App-logo" src={`../images/logo.png`} alt="Logo Mood Melody" />    
+            <img className="App-logo" src={logo} alt="Logo Mood Melody" />    
             <nav>  
                 <ul>  
                     <li>  
@@ -30,7 +31,7 @@ const Header = () => {
                             onClick={() => handleLinkClick('playlists')}  
                             className={activeLink === 'playlists' ? 'active' : ''}  
                         >  
-                            Listas de Reproducción  
+                            Mis Moods favoritos  
                         </Link>  
                     </li>  
                     <li>  
@@ -48,7 +49,7 @@ const Header = () => {
                             onClick={() => handleLinkClick('signup')}  
                             className={activeLink === 'signup' ? 'active' : ''}  
                         >  
-                            Registrar  
+                            Registrarme  
                         </Link>  
                     </li>  
                 </ul>  
