@@ -10,8 +10,7 @@ const Login = () => {
         password: ''  
     });  
     const [loading, setLoading] = useState(false);  
-    const [error, setError] = useState('');  
-    const navigate = useNavigate(); // Inicializa navigate  
+    const [error, setError] = useState('');   
     const navigate = useNavigate();  
 
     const handleChange = (e) => {  
@@ -98,5 +97,7 @@ const Login = () => {
         </div>  
     );  
 };  
+
+export default Login;
 
 export default Login;
