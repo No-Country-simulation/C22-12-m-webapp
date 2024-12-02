@@ -12,6 +12,7 @@ const Login = () => {
     const [loading, setLoading] = useState(false);  
     const [error, setError] = useState('');  
     const navigate = useNavigate(); // Inicializa navigate  
+    const navigate = useNavigate();  
 
     const handleChange = (e) => {  
         const { name, value } = e.target;  
@@ -42,6 +43,8 @@ const Login = () => {
 
             alert(result.message); // Muestra un mensaje de éxito   
             navigate("/"); // Redirecciona a la página de inicio usando navigate  
+            alert(result.message);   
+            navigate("/");  
         } catch (error) {  
             setError(error.message);  
         } finally {  
@@ -76,9 +79,21 @@ const Login = () => {
                         required  
                     />  
                 </div>  
+                <div className="mb-3 form-check">  
+                    <input  
+                        type="checkbox"  
+                        className="form-check-input"  
+                        id="rememberMe"  
+                    />  
+                    <label className="form-check-label" htmlFor="rememberMe">Recordarme</label>  
+                </div>  
                 <button type="submit" className="btn btn-success w-100" disabled={loading}>  
                     {loading ? 'Cargando...' : 'Iniciar sesión'}  
                 </button>  
+
+                <div className="mt-3 text-center">  
+                    <p>¿No tienes cuenta? <a href="/signup">Créala aquí</a>.</p>  
+                </div>  
             </form>  
         </div>  
     );  

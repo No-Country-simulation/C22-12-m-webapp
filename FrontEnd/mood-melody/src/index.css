@@ -206,5 +206,62 @@ Energetico {
   color: #0056b3; 
 }
 
+/* Estilo para formularios */  
 
+body {  
+  background-color: #f8f9fa;  
+}  
 
+.login-form, .signup-form {  
+  max-width: 300px;  
+  width: 70%;  
+  margin: 50px auto; 
+
+h2 {  
+  color: #333;  
+  font-weight: bold; 
+}  
+
+.form-control {  
+  border-radius: 0.25rem;   
+}  
+
+.btn-success {  
+  background-color: #28a745;   
+  border-color: #28a745; 
+}  
+
+.btn-success:hover {  
+  background-color: #218838; 
+  border-color: #1e7e34; 
+}  
+
+.form-check-label {  
+  margin-left: 0.25rem;   
+}  
+
+.alert {  
+  text-align: center; 
+}  
+
+.text-center {  
+  margin-top: 20px; 
+}  
+
+/* Estilo para el enlace de registro */  
+.Login .Signup {  
+  display: flex;  
+  justify-content: center;  
+  align-items: center;   
+  margin-top: 20px;   
+}  
+
+.signup a {  
+  color: #007bff;  
+  text-decoration: none;  
+}  
+
+.signup a:hover {  
+  text-decoration: underline;   
+}
+}
