@@ -143,26 +143,34 @@ footer {
 /* Recomendations */ 
 .alegre {  
   background-color: #FFD700; /* Dorado */  
+  background-color: #FFD700;   
   color: #000;  
 }  
 
 .reflexivo {  
   background-color: #D3D3D3; /* Gris claro */  
+  background-color: #D3D3D3;   
   color: #000; 
 }  
 
 .relajado {  
   background-color: #B0E0E6; /* Azul pálido */  
+  background-color: #5c90e3;  
   color: #000; 
 }  
 
 .romantico {  
   background-color: #FFB6C1; /* Rosa claro */  
   color: #000;  
+.romántico {  
+  background-color: #f12951;  
+  color: #fff;  
 }  
 
 Energetico {  
   background-color: #FF6347; /* Tomate */  
+.enérgico {  
+  background-color: #FF6347;  
   color: #fff;  
 }
   
@@ -188,6 +196,7 @@ Energetico {
 /* Estilo para el nombre de la playlist */  
 .playlist-name {  
   display: block; /* Fuerza el span a iniciar en una nueva línea */  
+  display: block;   
   margin-top: 8px;  
   text-decoration: underline;  
   color: #007bff; /* Color para parecer un enlace */  
