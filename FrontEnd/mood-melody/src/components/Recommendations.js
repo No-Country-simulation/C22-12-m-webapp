@@ -15,7 +15,7 @@ import activar from '../images/activar.png';
 // Componente de recomendaciones basado en el estado de ánimo  
 const Recommendations = ({ mood }) => {  
     // Cada estado de ánimo tiene sus respectivas playlists y descripciones  
-    const playlists = {  
+    const Playlists = {  
         Alegre: [  
             { name: 'Música para Bailar', img: bailar, link: '/playlists/musica-bailar' },  
             { name: 'Música para Cantar', img: cantar, link: '/playlists/musica-cantar' },  
