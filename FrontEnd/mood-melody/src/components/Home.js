@@ -1,5 +1,5 @@
 import React, { useState } from 'react';  
-import Recommendations from './Recomendations';  
+import Recommendations from './Recommendations';  
 import happyImg from '../images/happy.png';  
 import reflectiveImg from '../images/reflective.png';  
 import relaxedImg from '../images/relaxed.png';  
