@@ -42,16 +42,7 @@ const Header = () => {
                         >  
                             Iniciar Sesión  
                         </Link>  
-                    </li>  
-                    <li>  
-                        <Link   
-                            to="/signup"    
-                            onClick={() => handleLinkClick('signup')}  
-                            className={activeLink === 'signup' ? 'active' : ''}  
-                        >  
-                            Registrarme  
-                        </Link>  
-                    </li>  
+                    </li>   
                 </ul>  
             </nav>  
         </header>  
