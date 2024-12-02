@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';  
 import '../index.css';  
 import { useNavigate } from 'react-router-dom';  
+import Register from './Signup'; 
 
 const Login = () => {  
     // Definición del estado local  
@@ -91,13 +92,11 @@ const Login = () => {
                 </button>  
 
                 <div className="mt-3 text-center">  
-                    <p>¿No tienes cuenta? <a href="/signup">Créala aquí</a>.</p>  
+                    <p>¿No tienes cuenta? <a href="/Signup">Créala aquí</a>.</p>  
                 </div>  
             </form>  
         </div>  
     );  
 };  
-
-export default Login;
 
 export default Login;
