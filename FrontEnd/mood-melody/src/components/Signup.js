@@ -5,13 +5,13 @@ import '../index.css';
 
 const Signup = () => {  
     const [formData, setFormData] = useState({  
-        nombre: '',  
-        apellido: '',  
-        apodo: '',  
-        email: '',  
-        edad: '',  
-        contraseña: '',  
-        repetirContraseña: ''  
+        nombre: '',         
+        apellido: '',       
+        apodo: '',          
+        email: '',           
+        edad: '',           
+        contraseña: '',       
+        repetirContraseña: ''   
     });  
     const [loading, setLoading] = useState(false);  
     const [error, setError] = useState('');  
@@ -25,7 +25,7 @@ const Signup = () => {
         e.preventDefault();  
         setLoading(true);  
         setError('');   
-        
+
         // Validación de contraseñas  
         if (formData.contraseña !== formData.repetirContraseña) {  
             setError('Las contraseñas no coinciden');  
@@ -33,20 +33,23 @@ const Signup = () => {
             return;  
         }  
 
+        // Construcción del objeto JSON para enviar al backend  
+        const payload = {   
+            name: formData.nombre,         
+            nickname: formData.apodo,     
+            lastname: formData.apellido,    
+            age: formData.edad,             
+            email: formData.email,         
+            password: formData.contraseña  
+        };  
+
         try {  
             const response = await fetch('http://localhost:8080/api/signup', {  
                 method: 'POST',  
                 headers: {  
                     'Content-Type': 'application/json',  
                 },  
-                body: JSON.stringify({   
-                    nombre: formData.nombre,  
-                    apellido: formData.apellido,  
-                    apodo: formData.apodo,  
-                    email: formData.email,  
-                    edad: formData.edad,  
-                    contraseña: formData.contraseña,  
-                }),  
+                body: JSON.stringify(payload),  // Enviando el JSON aquí  
             });  
 
             const result = await response.json();  
@@ -133,7 +136,7 @@ const Signup = () => {
                     value={formData.edad}  
                     required   
                     className="form-control"  
-                    min="0"  // Validación para que la edad sea 0 o mayor  
+                    min="16"    
                 />  
             </div>  
             <div className="mb-3">  
