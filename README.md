@@ -1,5 +1,5 @@
 <div align="center">  
-    <img src="https://github.com/user-attachments/assets/5e5cca8f-454c-4b95-9f7a-38179b30df7c" alt="Logo de MoodMelody" style="border-radius: 50%; border: 5px solid aquamarine; width: 150px; height: 150px; object-fit: cover;">  
+    <img src="https://github.com/user-attachments/assets/5e5cca8f-454c-4b95-9f7a-38179b30df7c" alt="Logo de MoodMelody" style="border-radius: 50%; border: 5px solid cyan; width: 150px; height: 150px; object-fit: cover;">  
 </div>
 
 # 🌈 C22-12-m-webapp  
