@@ -1,8 +1,7 @@
 
-
-![logo de MoodMelody](https://github.com/user-attachments/assets/5e5cca8f-454c-4b95-9f7a-38179b30df7c)
 <div align="center">  
-    <img src="logo de MoodMelody" alt="Logo de MoodMelody" style="border-radius: 15px; width: 150px; height: auto;">  
+![logo de MoodMelody](https://github.com/user-attachments/assets/5e5cca8f-454c-4b95-9f7a-38179b30df7c)
+<img src="logo de MoodMelody" alt="Logo de MoodMelody" style="border-radius: 15px; width: 150px; height: auto;">  
 </div> 
 
 
