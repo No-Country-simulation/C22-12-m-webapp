@@ -24,7 +24,7 @@ h2, h3{
 }
 
 /* Estilos para el Header */  
-Header {  
+header {  
   background: var(--navy-blue);   
   display: flex;  
   flex-direction: column;  
@@ -197,10 +197,13 @@ body {
   background-color: #f8f9fa;  
 }  
 
-.login-form, .signup-form {  
-  max-width: 300px;  
-  width: 70%;  
-  margin: 50px auto; 
+.Login, .Signup {     
+    padding: 5% 10%;
+    display: grid;
+    justify-content: center;
+    border-radius: 8px;
+    margin: 30px 21%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.293);   
 
 h2 {  
   color: #333;  
@@ -234,12 +237,6 @@ h2 {
 }  
 
 /* Estilo para el enlace de registro */  
-.Login .Signup {  
-  display: flex;  
-  justify-content: center;  
-  align-items: center;   
-  margin-top: 20px;   
-}  
 
 .signup a {  
   color: #007bff;  
