@@ -1,27 +1,53 @@
-# C22-12-m-webapp
-# WEB APP – MOODMELODY #
-
-El proyecto se centra en la creación de una web app que sugiera el armado de playlists de música adaptadas según el estado de ánimo del usuario.-
-Por medio de una interfaz amigable e intuitiva el usuario podrá seleccionar su estado emocional del día recibiendo recomendaciones musicales personalizadas.
-
-## CARACTERÍSTICAS DE LA WEB APP: ##
 
 
-+ __Elección de Estado de Ánimo:__ Los usuarios pueden elegir entre diferentes estados de ánimo (Alegre, Reflexivo, Relajado, Eufórico, Romántico), para obtener playlists que se ajusten a sus emociones actuales.
+![logo de MoodMelody](https://github.com/user-attachments/assets/5e5cca8f-454c-4b95-9f7a-38179b30df7c)
+<div align="center">  
+    <img src="logo de MoodMelody" alt="Logo de MoodMelody" style="border-radius: 15px; width: 150px; height: auto;">  
+</div> 
 
-+ __Recomendaciones Personalizadas al usuario:__ Utiliza algoritmos de recomendación para ofrecer canciones y artistas basados en el estado de ánimo seleccionado.
 
-+ __Interfaz Amigable:__ Diseño intuitivo y fácil de usar, con diseño responsive accesible desde dispositivos móviles y de escritorio.
 
-+ __Creación y Edición de de Playlists:__ Los usuarios pueden crear y guardar sus propias playlists personalizadas con sus canciones favoritas o editar las propuestas por default.
+# 🌈 C22-12-m-webapp  
+# 🎶 WEB APP – MOODMELODY 🎶  
 
-+ __Integración con Servicios de Música:__ Posibilidad de conectar con plataformas de streaming populares para reproducir música directamente desde la aplicación.
+Bienvenido a **MoodMelody**, tu asistente personal para crear playlists de música adaptadas a tu estado de ánimo. Con una interfaz amigable e intuitiva, podrás seleccionar tu estado emocional diario y recibir recomendaciones musicales personalizadas. ¡Deja que la música hable por ti!  
 
-+ __Compartir en Redes Sociales:__ Funcionalidad para compartir playlists en redes sociales.
+---  
 
-### Tecnologías Utilizadas  
+## 🌟 CARACTERÍSTICAS DE LA WEB APP 🌟  
 
-- 🟢 **Java**  
+### 🎭 Elección de Estado de Ánimo  
+Los usuarios pueden elegir entre diferentes estados de ánimo:  
+- **Alegre**  
+- **Reflexivo**  
+- **Relajado**  
+- **Enérgico**  
+- **Romántico**  
+¡Obtén playlists que se ajusten a tus emociones actuales y sin la monotonía de las repeticiones de otros algoritmos!  
+
+### 🎶 Recomendaciones Personalizadas  
+Utiliza algoritmos de recomendación para ofrecer canciones y artistas basados en el estado de ánimo seleccionado.  
+
+### 📱 Interfaz Amigable  
+Diseño intuitivo y fácil de usar, con diseño responsive accesible desde dispositivos móviles y de escritorio.  
+
+### 🛠️ Creación y Edición de Playlists  
+Los usuarios pueden crear, guardar y editar sus propias playlists personalizadas.  
+
+### 🎧 Integración con Servicios de Música  
+Conéctate con plataformas de streaming populares para reproducir música directamente desde la aplicación.  
+
+### 📤 Compartir en Redes Sociales  
+Comparte tus playlists en redes sociales y deja que tus amigos escuchen tu estado de ánimo.  
+
+---  
+
+## 💻 Tecnologías Utilizadas  
+
+- 🟢 **Java** (Spring Boot)  
 - 🔵 **HTML**  
-- 🟡 **CSS**  
-- 🔴 **JavaScript**  
+- 🟡 **CSS** (Bootstrap)  
+- 🔴 **JavaScript** (React)  
+
+
+¡Disfruta creando tu experiencia musical personalizada con **MoodMelody**! 🎵
