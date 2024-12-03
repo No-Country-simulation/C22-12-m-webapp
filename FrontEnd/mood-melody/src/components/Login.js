@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';  
 import '../index.css';  
 import { useNavigate } from 'react-router-dom';  
-import Register from './Signup'; 
 
 const Login = () => {  
     // Definición del estado local  
@@ -42,9 +41,7 @@ const Login = () => {
             localStorage.setItem('token', result.token);   
 
             alert(result.message); // Muestra un mensaje de éxito   
-            navigate("/"); // Redirecciona a la página de inicio usando navigate  
-            alert(result.message);   
-            navigate("/");  
+            navigate("/"); // Redirecciona a la página de inicio usando navigate   
         } catch (error) {  
             setError(error.message);  
         } finally {  
