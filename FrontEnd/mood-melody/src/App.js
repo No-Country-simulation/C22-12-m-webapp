@@ -6,7 +6,7 @@ import Login from './components/Login.js';
 import Signup from './components/Signup';  
 import Playlists from './components/Playlists.js';   
 import Home from './components/Home.js';  
-import Recomendations from './components/Recommendations.js';  
+import Recommendations from './components/Recommendations.js';  
 import './index.css';  
 
 const App = () => {  
@@ -16,12 +16,12 @@ const App = () => {
                 <Header />  
                 <main>  
                     <Routes>  
-                        <Route path="/" element={<Navigate to="/home" replace />} />  
-                        <Route path="/signup" element={<Signup />} />  
-                        <Route path="/playlists" element={<Playlists />} />  
-                        <Route path="/login" element={<Login />} />  
-                        <Route path="/home" element={<Home />} />  
-                        <Route path="/recommendations" element={<Recommendations />} />  
+                        <Route path="/" element={<Navigate to="/Home" replace />} />  
+                        <Route path="/Signup" element={<Signup />} />  
+                        <Route path="/Playlists" element={<Playlists />} />  
+                        <Route path="/Login" element={<Login />} />  
+                        <Route path="/Home" element={<Home />} />  
+                        <Route path="/Recommendations" element={<Recommendations />} />  
                     </Routes>  
                 </main>  
                 <Footer />  
