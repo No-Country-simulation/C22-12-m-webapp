@@ -1,13 +1,10 @@
 
-<div align="center">  
-![logo de MoodMelody](https://github.com/user-attachments/assets/5e5cca8f-454c-4b95-9f7a-38179b30df7c)
-<img src="logo de MoodMelody" alt="Logo de MoodMelody" style="border-radius: 15px; width: 150px; height: auto;">  
-</div> 
-
-
-
 # 🌈 C22-12-m-webapp  
-# 🎶 WEB APP – MOODMELODY 🎶  
+# 🎶 WEB APP – MOODMELODY 🎶 
+
+<div align="center">  
+    <img src="https://github.com/user-attachments/assets/5e5cca8f-454c-4b95-9f7a-38179b30df7c" alt="Logo de MoodMelody" style="border-radius: 50%; border: 5px solid aquamarine; width: 100px; height: 100px;">  
+</div>
 
 Bienvenido a **MoodMelody**, tu asistente personal para crear playlists de música adaptadas a tu estado de ánimo. Con una interfaz amigable e intuitiva, podrás seleccionar tu estado emocional diario y recibir recomendaciones musicales personalizadas. ¡Deja que la música hable por ti!  
 
