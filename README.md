@@ -1,5 +1,5 @@
 <div align="center">  
-    <img src="https://github.com/user-attachments/assets/5e5cca8f-454c-4b95-9f7a-38179b30df7c" alt="Logo de MoodMelody" style="border-radius: 50%; border: 5px solid cyan; width: 150px; height: 150px; object-fit: cover;">  
+    <img src="![15](https://github.com/user-attachments/assets/04ad6ff7-f2e3-4623-a312-dadb764fb661)" alt="Logo de MoodMelody" style="border-radius: 50%; border: 5px solid cyan; width: 150px; height: 150px; object-fit: cover;">  
 </div>
 
 # 🌈 C22-12-m-webapp  
@@ -46,3 +46,15 @@ Comparte tus playlists en redes sociales y deja que tus amigos escuchen tu estad
 
 
 ¡Disfruta creando tu experiencia musical personalizada con **MoodMelody**! 🎵
+![14](https://github.com/user-attachments/assets/ee99c458-c06e-409a-852a-aecf65ec1721)
+
+![16](https://github.com/user-attachments/assets/c2f73ae7-19b6-4d63-bb58-c00823d1193a)
+
+![17](https://github.com/user-attachments/assets/00e54e97-22d5-48cf-8711-3c3dd2bafba8)
+
+![18](https://github.com/user-attachments/assets/51e22b7f-ea26-460a-86f6-b03190a12db8)
+
+![19](https://github.com/user-attachments/assets/aff48fc7-9a70-4ad8-a799-37cb45ed03cc)
+
+
+
