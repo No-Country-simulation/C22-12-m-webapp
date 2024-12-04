@@ -10,7 +10,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @Getter
 @Setter
-@Table
+@Table(name = "song")
 public class Song {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -22,5 +22,5 @@ public class Song {
     private boolean explicit;
     @ManyToOne
     @JoinColumn(name = "list_reproduction_id", nullable = false)
-    private ListReproduction listReproduccionn;
+    private ListReproduction listReproduction;
 }

@@ -12,16 +12,16 @@ import java.util.List;
 @AllArgsConstructor
 @Getter
 @Setter
-@Table
+@Table(name = "list_reproduction")
 public class ListReproduction {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String name;
-    @OneToMany
+    @OneToMany(mappedBy = "listReproduction")
     private List<Song> songs;
     @ManyToOne
     @JoinColumn(name = "user_id", nullable = false)
-    private User user;
+    private Users users;
 
 }

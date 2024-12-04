@@ -7,6 +7,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.io.Serializable;
 import java.util.List;
 
 
@@ -15,8 +16,9 @@ import java.util.List;
 @NoArgsConstructor
 @Setter
 @Getter
-@Table(name = "user")
-public class User{
+@Table(name = "users")
+public class Users implements Serializable {
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
@@ -28,8 +30,9 @@ public class User{
     private String password;
     @OneToMany
     private List<ListReproduction> listReproductions;
+    private String spotifyAccessToken;
 
-    public User (DtoRegisterUser dtoRegisterUser) {
+    public Users(DtoRegisterUser dtoRegisterUser) {
         this.name = dtoRegisterUser.name();
         this.nickName = dtoRegisterUser.nickname();
         this.lastName = dtoRegisterUser.lastname();
