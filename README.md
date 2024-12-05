@@ -57,7 +57,7 @@ Comparte tus playlists en redes sociales y deja que tus amigos escuchen tu estad
 ![19](https://github.com/user-attachments/assets/aff48fc7-9a70-4ad8-a799-37cb45ed03cc)
 
 
-### Equipo, Roles y Stack ###
+👤👤👤👤 ### Equipo, Roles y Stack ###
 
 
 |              Nombre             |    Rol    |                    Stack                   |
@@ -71,16 +71,16 @@ Comparte tus playlists en redes sociales y deja que tus amigos escuchen tu estad
 -------------------------------------------------------------------------------------------------
 
 
-**Tecnología para reuniones y comunicación:** Whatsapp, Discord, Slack, Meet.
+📬 **Tecnología para reuniones y comunicación:** Whatsapp, Discord, Slack, Meet.
 
-**Aplicación para presentaciones y slides:** Canva.
+📈**Aplicación para presentaciones y slides:** Canva.
 
-**Metodología de trabajo:** Agile. Uso de Tablero Kanban (modificado para *Scrumban* con columna *"Backlog”* y *“Evaluate”* a las tres columnas clásicas: *“To Do”, “In Progress” y “Done”*).
+🏃 **Metodología de trabajo:** Agile. Uso de Tablero Kanban (modificado para *Scrumban* con columna *"Backlog”* y *“Evaluate”* a las tres columnas clásicas: *“To Do”, “In Progress” y “Done”*).
 
 --------------------------------------------------------------------------------------------------
 
 
-## MODELO DE NEGOCIO ##
+💼	## MODELO DE NEGOCIO ##
 
 
 El rango etario en el que esta webapp brindaría soluciones es el situado principalmente entre los 20 a 60 años, grupo de personas usuarias principalmente de dispositivos como *notebooks, smatphones y tablets*:
@@ -95,7 +95,7 @@ Siendo una amplia brecha generacional, se aplicaría a todos los géneros musica
 Se trata de usuarios que escuchan música en diferentes momentos del día (viajando, trabajando, estudiando, relajando, haciendo deporte), que valoran la personalización y la recomendación de música basada en sus gustos, usan diversas plataformas de streaming musical y también gustan compartir sus playlists y editarlas en caso de necesidad.
 
 
-### ¿En qué se diferenciaría esta web app con otras en el mercado? ###
+📌 ### ¿En qué se diferenciaría esta web app con otras en el mercado? ###
 
 Se propone:
 
@@ -107,7 +107,7 @@ Se propone:
 
 
 
-### ¿Cómo sustentar esta web app en el mercado? ###
+💹💵 ### ¿Cómo sustentar esta web app en el mercado? ###
 
 Planteamos la idea de establecer *Suscripciones Premium*:
 
@@ -122,7 +122,7 @@ Se establecería por **Niveles:**  Ofrecer diferentes niveles de suscripción co
 Este modelo generaría ingresos recurrentes, permitiendo ofrecer un servicio de mayor valor y fidelizando a los usuarios.
 
 
-## COMPROMISO CON LA CALIDAD ##
+🔍 ## COMPROMISO CON LA CALIDAD ##
 
 
 
@@ -133,7 +133,7 @@ En la medida que se van haciendo entregas desde desarrollo, cada módulo se test
 De este modo, garantizamos fiabilidad, eficiencia y seguridad, ahorro de costos y reducción de tiempos de entrega.
 
 
-## ¿CÓMO CUBRIMOS EL SISTEMA? ##
+🔌 ## ¿CÓMO CUBRIMOS EL SISTEMA? ##
 
 
 + ESTABLECEMOS ANÁLISIS DE REQUISITOS A TRAVÉS DE LAS US.
