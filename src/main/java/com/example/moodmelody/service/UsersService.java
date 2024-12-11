@@ -18,4 +18,6 @@ public class UsersService {
     public Users getUserById(Long id){
          return usersRepository.getById(id);
     }
+
+    public Users getUserByEmail(String email) { return usersRepository.getUsersByEmail(email);}
 }

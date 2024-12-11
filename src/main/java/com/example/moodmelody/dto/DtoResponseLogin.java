@@ -5,14 +5,14 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.util.List;
-
 @Getter
 @Setter
-@AllArgsConstructor
 @NoArgsConstructor
-public class ListReproductionDTO {
+public class DtoResponseLogin {
+    private Long id;
     private String name;
-    private List<SongDTO> songs;
+    private String nickName;
+    private String email;
+    public DtoResponseLogin(Long id, String name, String nickName, String email) {
+    }
 }
-

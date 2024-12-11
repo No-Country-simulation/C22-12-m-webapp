@@ -10,4 +10,6 @@ import java.util.Optional;
 @Repository
 public interface UsersRepository extends JpaRepository<Users, Long> {
     Users getById(Long id);
+
+    Users getUsersByEmail(String email);
 }

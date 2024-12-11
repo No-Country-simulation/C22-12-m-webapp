@@ -6,7 +6,6 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.util.List;
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
@@ -17,11 +16,9 @@ public class ListReproduction {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    private String name;
-    @OneToMany(mappedBy = "listReproduction")
-    private List<Song> songs;
+    private String url;
     @ManyToOne
-    @JoinColumn(name = "user_id", nullable = false)
+    @JoinColumn(name = "users_id", nullable = false)
     private Users users;
 
 }

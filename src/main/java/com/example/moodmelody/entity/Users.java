@@ -28,9 +28,8 @@ public class Users implements Serializable {
     private int age;
     private String email;
     private String password;
-    @OneToMany
+    @OneToMany(mappedBy = "users")
     private List<ListReproduction> listReproductions;
-    private String spotifyAccessToken;
 
     public Users(DtoRegisterUser dtoRegisterUser) {
         this.name = dtoRegisterUser.name();
