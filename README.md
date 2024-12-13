@@ -185,3 +185,5 @@ Esto garantiza fiabilidad, eficiencia, seguridad, ahorro de costos y reducción 
   
 - **🔄 Pruebas de Regresión:**  
   Aseguran el funcionamiento tras actualizaciones y correcciones de errores.
+
+  Link al repositorio de pruebas https://app.qase.io/project/MOODMELODY
