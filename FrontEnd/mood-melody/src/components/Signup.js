@@ -1,15 +1,14 @@
-// src/components/Signup.js  
-import React, { useState } from 'react';  
-import 'bootstrap/dist/css/bootstrap.min.css';   
+// src/components/Signup.js    
+import React, { useState } from 'react';     
 import '../index.css';   
 
 const Signup = () => {  
     const [formData, setFormData] = useState({  
         nombre: '',         
-        apellido: '',       
-        apodo: '',          
-        email: '',           
+        apodo: '',      
+        apellido: '',           
         edad: '',           
+        email: '',           
         contraseña: '',       
         repetirContraseña: ''   
     });  
@@ -38,30 +37,37 @@ const Signup = () => {
             name: formData.nombre,         
             nickname: formData.apodo,     
             lastname: formData.apellido,    
-            age: formData.edad,             
+            age: parseInt(formData.edad, 10),  // Convertir edad a número     
             email: formData.email,         
             password: formData.contraseña  
         };  
 
         try {  
-            const response = await fetch('http://localhost:8080/api/signup', {  
+            const response = await fetch('http://localhost:8080/user/register', {  
                 method: 'POST',  
                 headers: {  
                     'Content-Type': 'application/json',  
                 },  
-                body: JSON.stringify(payload),  // Enviando el JSON aquí  
+                body: JSON.stringify(payload),  
             });  
 
+            // Verifica respuesta y procesa el resultado  
             const result = await response.json();  
 
             if (!response.ok) {  
                 throw new Error(result.message || 'Error en el registro');  
             }  
             
+            // Si el registro es exitoso, almacenar un token si se devuelve  
+            if (result.token) {  
+                localStorage.setItem('authToken', result.token);   
+            }  
+
             alert(result.message);    
+
             // Limpia los campos después de un registro exitoso  
             setFormData({ nombre: '', apellido: '', apodo: '', email: '', edad: '', contraseña: '', repetirContraseña: '' });  
-            window.location.href = '/'; // Redirecciona a la página de inicio  
+            window.location.href = '/login'; // Redirecciona a la página de login   
             
         } catch (error) {  
             setError(error.message);  
@@ -136,7 +142,7 @@ const Signup = () => {
                     value={formData.edad}  
                     required   
                     className="form-control"  
-                    min="16"    
+                    min="0"    
                 />  
             </div>  
             <div className="mb-3">  
@@ -172,4 +178,5 @@ const Signup = () => {
     );  
 };  
 
+export default Signup;
 export default Signup;
