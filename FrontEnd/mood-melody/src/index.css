@@ -1,27 +1,30 @@
+/* src/index.css*/
+
 :root {  
   --aquamarine: #63d7c7;  
   --light-teal: #93edda;  
   --navy-blue: #052752;   
   --red-pink: #f12951;   
   --teal: #35818e;  
-}
+}  
 
 * {  
   box-sizing: border-box;  
-} 
+}   
 
 body {  
   font-family: Arial, sans-serif;   
   padding: 0;  
-  background-color:var(--aquamarine) ; 
+  background-color: var(--aquamarine);   
   height: 100vh;  
-  margin: 0; 
+  margin: 0;   
+  overflow-x: hidden; /* Evitar el scroll horizontal */  
 }  
 
-h2, h3{
-  text-align: center;
-  color: var(--navy-blue);
-}
+h2, h3 {  
+  text-align: center;  
+  color: var(--navy-blue);  
+}  
 
 /* Estilos para el Header */  
 header {  
@@ -30,73 +33,79 @@ header {
   flex-direction: column;  
   align-items: center;  
   padding: 15px;   
-  width: 100vw; 
-  position: relative;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
-  z-index: 1000;
+  width: 100%;   
+  position: relative;  
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);   
+  z-index: 1000;  
 }  
 
 nav ul {  
   list-style: none;  
   padding: 0;  
-  display: flex;  
-  gap: 135px;
+  display: flex;
+  justify-content: center;  
+  gap: 20px; /* Ajustado para ser más flexible en pantallas pequeñas */  
+  flex-wrap: wrap; /* Permitir que los elementos se ajusten en pantallas pequeñas */  
 }  
 
 nav a {  
   color: var(--light-teal);  
   text-decoration: none;  
-  padding: 0,5px;  
+  padding: 0.5px;  
   transition: color 0.3s ease;   
 }  
 
 nav a.active {   
-  color: var(--teal); 
+  color: var(--teal);   
   opacity: 0.7;   
 }  
 
 nav a:hover {  
   opacity: 0.7;  
-} 
+}   
 
 .App-logo {  
   width: 100px;  
-  height: 100px; 
-  border-radius: 50%;
-  border: 3px solid #03A9F4; width: 100px; height: 100px; 
-  margin-bottom: 20px;
-  padding:2px; 
-  align-items: center;
+  height: 100px;   
+  border-radius: 50%;  
+  border: 3px solid #03A9F4;   
+  margin-bottom: 20px;  
+  padding:2px;   
+  display: flex; /* Flex para centrar el logo */  
+  align-items: center;  
+  justify-content: center;  
 }  
 
 section {  
   display: flex;   
-  width: 900px; 
-  height: 230px;  
+  width: 90%; /* Ajustado para ser más responsivo */  
+  max-width: 900px; /* Limitar el ancho máximo */   
   justify-content: space-around;  
   align-items: center;  
-  margin: 20px auto;  
-  border: 2px solid #ccc; 
+  margin: 20px auto;
+  padding: 2rem; 
+  border: 2px solid #ccc;   
   border-radius: 15px;   
-  background-color: rgba(255, 255, 255, 0.9); 
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+  background-color: rgba(255, 255, 255, 0.9);   
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);   
 }  
 
 section img {  
-  width: 0; 
+  width: 0;   
   flex-grow: 1;   
-  object-fit: cover;
+  object-fit: cover;  
   opacity: 0.8;   
-  transition: width 0.5s ease, opacity 0.5s ease;
-  border-radius: 5px; 
+  transition: width 0.5s ease, opacity 0.5s ease;  
+  border-radius: 5px;   
 }  
 
 section img:hover {  
-  cursor: pointer; 
-  width: 300px;   
+  cursor: pointer;   
+  width: 100%; /* Ajustado para ser responsivo */  
+  max-width: 300px;   
   opacity: 1;   
   filter: contrast(120%);   
-}
+}  
 
 .mood-buttons {  
   display: flex;  
@@ -117,12 +126,11 @@ section img:hover {
 .mood-buttons button:hover {  
   background-color: #21a1f1;  
   color: white;  
-}
+}  
 
-.Home {
-  background-color: var(--aquamarine);
-
-}
+.Home {  
+  background-color: var(--aquamarine);  
+}  
 
 .Footer {  
   text-align: center;  
@@ -130,11 +138,10 @@ section img:hover {
   background: #35424a;  
   color: #ffffff;  
   position: relative;  
-  bottom: 0;  
   width: 100%;  
-}
+}  
 
-/* Recommendations */ 
+/* Recommendations */   
 .alegre {  
   background-color: #FFD700;   
   color: #000;  
@@ -142,12 +149,12 @@ section img:hover {
 
 .reflexivo {   
   background-color: #D3D3D3;   
-  color: #000; 
+  color: #000;   
 }  
 
 .relajado {  
   background-color: #5c90e3;  
-  color: #000; 
+  color: #000;   
 }  
 
 .romántico {  
@@ -158,24 +165,45 @@ section img:hover {
 .enérgico {  
   background-color: #FF6347;  
   color: #fff;  
-}
+}  
   
 .playlist-list {  
   list-style: none; /* Eliminar viñetas */  
   padding: 0;  
-  display: flex; 
+  display: flex;   
   justify-content: center;  
+  flex-wrap: wrap; /* Permitir que las listas se ajusten */  
+  max-height: 400px; /* Ajustar limite de altura */  
+  overflow-y: auto; /* Agregar scroll */
+  margin: 0 auto;  
 }  
 
 .playlist-item {  
-  margin: 10px;  
+  margin: 10px;
+  flex: 1 0 300px; /* Permitir que cada item tenga un tamaño mínimo */    
   text-align: center;  
+  transition: transform 0.2s; 
+}  
+
+.playlist-item:hover {  
+  transform: scale(1.05);   
+} 
+/* Medios de consulta para pantallas pequeñas */  
+@media (max-width: 600px) {  
+  .playlist-item {  
+    flex: 1 0 90%; /* Hacer que los items ocupen más ancho en pantallas pequeñas */  
+  }  
+
+  .playlist-list {  
+    max-height: none; /* Permitir que la lista ocupe su altura natural */  
+  }  
 }  
 
 /* Estilo de las imágenes */  
 .playlist-image {  
-  width: 300px;   
-  height: 200px;  
+  width: 100%;   
+  max-width: 70%;   
+  height: auto; /* Mantener proporciones de la imagen */  
   border-radius: 8px;  
 }  
 
@@ -184,12 +212,13 @@ section img:hover {
   display: block;   
   margin-top: 8px;  
   text-decoration: underline;  
-  color: #007bff; /* Color para parecer un enlace */  
+  color: #007bff;
+  transition: color 0.3s ease;   
 }  
 
 .playlist-name:hover {  
-  color: #0056b3; 
-}
+  color: #0056b3;   
+}  
 
 /* Estilo para formularios */  
 
@@ -198,16 +227,18 @@ body {
 }  
 
 .Login, .Signup {     
-    padding: 5% 10%;
-    display: grid;
-    justify-content: center;
-    border-radius: 8px;
-    margin: 30px 21%;
+    padding: 5% 10%;  
+    display: grid;  
+    justify-content: center;  
+    border-radius: 8px;  
+    margin: 30px 10%; /* Ajustar margen para ser más responsivo */  
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.293);   
+}  
 
-h2 {  
-  color: #333;  
-  font-weight: bold; 
+h2,h3 {  
+  color: #333; 
+  font-size: 2em;  
+  font-weight: bold;   
 }  
 
 .form-control {  
@@ -216,12 +247,12 @@ h2 {
 
 .btn-success {  
   background-color: #28a745;   
-  border-color: #28a745; 
+  border-color: #28a745;   
 }  
 
 .btn-success:hover {  
-  background-color: #218838; 
-  border-color: #1e7e34; 
+  background-color: #218838;   
+  border-color: #1e7e34;   
 }  
 
 .form-check-label {  
@@ -229,11 +260,11 @@ h2 {
 }  
 
 .alert {  
-  text-align: center; 
+  text-align: center;   
 }  
 
 .text-center {  
-  margin-top: 20px; 
+  margin-top: 20px;   
 }  
 
 /* Estilo para el enlace de registro */  
@@ -245,5 +276,4 @@ h2 {
 
 .signup a:hover {  
   text-decoration: underline;   
-}
-}
+}  
