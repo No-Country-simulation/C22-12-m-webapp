@@ -1,43 +1,25 @@
+// src/components/Home.js 
 import React, { useState } from 'react';  
+import PlaylistGenerator from './PlaylistGenerator';  
 import Recommendations from './Recommendations';  
-import happyImg from '../images/happy.png';  
-import reflectiveImg from '../images/reflective.png';  
-import relaxedImg from '../images/relaxed.png';  
-import energeticImg from '../images/energetic.png';  
-import romanticImg from '../images/romantic.png';
+import Playlists from './Playlists';  
 import '../index.css';
 
-function PlaylistGenerator({ setMood, userName }) {
-    const moods = [
-        { name: 'Alegre', img: happyImg },
-        { name: 'Reflexivo', img: reflectiveImg },
-        { name: 'Relajado', img: relaxedImg },
-        { name: 'Enérgico', img: energeticImg },
-        { name: 'Romántico', img: romanticImg }
-    ];
-
-    return (
-        <div>
-            <h2>¡Bienvenido, {userName}!</h2>
-            <h3>¿Cómo te sientes hoy?</h3>
-            <section>
-                {moods.map((mood) => (
-                    <img
-                        key={mood.name}
-                        src={mood.img}
-                        alt={mood.name}
-                        onClick={() => setMood(mood.name)}
-                        tabIndex={0}
-                        onKeyPress={(e) => (e.key === 'Enter' ? setMood(mood.name) : null)} />
-                ))}
-            </section>
-        </div>
-    );
-}  
-
 function Home() {  
-    const [mood, setMood] = useState(null);    
-    const userName = 'Usuario';  
+    const [mood, setMood] = useState(null);  
+    const userName = ''; // Asegúrate de tener el usuario definido.  
+    const [selectedPlaylists, setSelectedPlaylists] = useState([]);  
+    const [favoritePlaylists, setFavoritePlaylists] = useState([]);  
+
+    const updateFavoritePlaylists = (playlist) => {  
+        setFavoritePlaylists((prevFavorites) => {  
+            const isFavorite = prevFavorites.some(fav => fav.id === playlist.id);  
+            if (!isFavorite) {  
+                return [...prevFavorites, playlist];  
+            }  
+            return prevFavorites;  
+        });  
+    };  
 
     return (  
         <div className="Home">  
@@ -46,11 +28,17 @@ function Home() {
             ) : (  
                 <div>  
                     <h3>Tu estado de ánimo es: {mood}</h3>  
-                    <Recommendations mood={mood} />  
+                    <Recommendations mood={mood} updateFavoritePlaylists={updateFavoritePlaylists} />  
+                    {selectedPlaylists.length > 0 && (  
+                        <Playlists playlists={selectedPlaylists} favoritePlaylists={favoritePlaylists} userId={userName} />  
+                    )}  
                 </div>  
             )}  
         </div>  
     );  
 }  
+
+export default Home;
+
 
 export default Home;
