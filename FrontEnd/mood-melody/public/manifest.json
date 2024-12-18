@@ -1,0 +1,28 @@
+{
+  "short_name": "Mood Melody",
+  "name": "Mood Melody: Music and Mood Tracker",
+
+  "icons": [
+    {
+      "src": "./favicon/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "./favicon/web-app-manifest-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "./favicon/web-app-manifest-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#ffffff",  
+  "theme_color": "#4A90E2",  
+  "description": "Una app para acompañar tu estado de ánimo con música mientras realizas tus actividades."
+}
+
