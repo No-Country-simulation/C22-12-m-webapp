@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.stream.Collectors;
-
+@CrossOrigin(origins = "http://localhost:3000")
 @RestController
 @RequestMapping("/urls")
 public class UrlController {
@@ -24,6 +24,7 @@ public class UrlController {
 
         return new ResponseEntity<>("URL guardada exitosamente con ID: " + savedUrl.getId(), HttpStatus.CREATED);
     }
+
     @GetMapping("/load/{userId}")
     public ResponseEntity<List<String>> getAllUrlsByUserId(@PathVariable Long userId) {
         List<ListReproduction> urls = urlService.findAllUrlsByUserId(userId);
