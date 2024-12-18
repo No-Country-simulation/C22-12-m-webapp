@@ -4,17 +4,17 @@
 
   "icons": [
     {
-      "src": "FrontEnd/mood-melody/public/favicon/favicon.ico",
+      "src": "./favicon/favicon.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "FrontEnd/mood-melody/public/favicon/web-app-manifest-192x192.png",
+      "src": "./favicon/web-app-manifest-192x192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "FrontEnd/mood-melody/public/favicon/web-app-manifest-512x512.png",
+      "src": "./favicon/web-app-manifest-512x512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
@@ -23,5 +23,6 @@
   "display": "standalone",
   "background_color": "#ffffff",  
   "theme_color": "#4A90E2",  
-  "description": "Una app para rastrear tu estado de ánimo mientras escuchas música."
+  "description": "Una app para acompañar tu estado de ánimo con música mientras realizas tus actividades."
 }
+
